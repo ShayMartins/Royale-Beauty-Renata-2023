@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Footer Responsivo</title>
+</head>
+
+<style>
+
+
+  
+/* formnulario */
+.h1 {
+font-family: open sans;
+font-size: 25px;
+text-align: center;
+font-weight: bold;
+
+}
+
+.quadro{
+display: flex;
+background-color: rgb(230, 228, 228);
+width: 500px;
+height: 30px;
+border-radius: 5px;
+border: none;
+}
+
+
+input[type=submit] {
+background:  #e9b454 ;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px){
+
+i#burguer {
+display: none;    
+}
+
+menu {
+display: block;    
+}
+
+menu > ul > li {
+display: inline-block;
+}
+
+menu > ul > li :hover{
+background-color: violet;
+}
+
+main {
+width: 768;
+}
+}
+
+
+</style>
+
+
+
+
+    
+    <main>
+
+      
+        <div class="h1">CADASTRO CLIENTE VIP</div>
+        <br>
+        <h3>Insira seus dados para cadastramento em nosso sistema de clientes e seja um cliente VIP</h3>
+        <br>
+        <input class="quadro" type="text" name="nome" placeholder="Digite seu Nome aqui">
+        <br>
+        <br>
+        <input class="quadro" type="e-mail" name="email" placeholder="Digite seu e-mail">
+        <br>
+        <br>
+        <input class="quadro" type="phone" name="phone" placeholder="WhatsApp.">
+        <br>
+        <br>
+        
+        <h3>Quais procedimentos você costuma fazer?</h3>
+        <br>
+        <input type="radio" name="Escova" value="Escova">Escova <br>
+        <input type="radio" name="unhas" value="Unhas">Unhas <br>
+        <input type="radio" name="Corte" value="Corte">Corte <br>
+        <input type="radio" name="Coloração" value="Coloração">Coloração <br>
+        <input type="radio" name="hidratação" value="hidratação">hidratação <br>
+        <input type="radio" name="Selagem" value="Selagem">Selagem <br>
+        <input type="radio" name="luzes" value="Luzes">Luzes<br>
+        <input type="radio" name="luzes" value="Luzes">Esmaltação<br>
+        <input type="radio" name="Outros" value="Outros">Outros <br>
+        <br>
+        
+        <h3>Gostaria de receber nossas promoções?</h3>
+        <br>
+        
+        <input type="radio" name="Sim" value="Sim">Sim<br>
+        <input type="radio" name="Não" value="Não">Não<br>
+        <br>
+        <input type="submit" name="enviar" value="Enviar">       
+
+      
+
+
+
+
+
+    </main>
+  </body>
+
+
+
+
+
+
+  <footer>
+
+</footer>
+
+</html>
+
+
