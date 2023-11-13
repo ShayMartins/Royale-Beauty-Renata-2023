@@ -201,6 +201,40 @@ img {
     100% { margin-left: -400%; }
 }
 
+/*galeria fotos*/
+
+
+.galeria {
+    --auto-grid-min-size: 16rem;  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    gap: 10px;   
+    
+    }    
+  
+
+  
+  .galeria_img {
+    width: 280px;
+    height: 350px;
+    background-position: 100%;    
+    object-fit: cover;
+          
+  }
+   
+  .carrossel {
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .carrossel .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+
 
 /*servicos*/
 
@@ -232,6 +266,15 @@ article > p {
       
   }  
   
+  .texto-salao {
+    font-family: open sans;
+    font-weight:normal;
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 10px;
+  
+  }
+
   
   .item-servico {
     font-weight: bold;
@@ -249,12 +292,12 @@ article > p {
   }
   
   .titulo-servico {
-    background-color: var(--cor7);
-    color: white;
+        color: rgb(97, 1, 1);
     width: 886px;
-    font-size: 1.7rem;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
+    font-family: cursive;
   }
   
 
@@ -421,7 +464,7 @@ article > p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(90% / 3 - 60px);
+    width: calc(100% / 3 - 60px);
     margin: 10px;
     padding: 10px;
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
