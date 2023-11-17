@@ -435,23 +435,20 @@ article > p {
 }
 
 /*mapa*/
-.container-mapa {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
 }
 
-.container-mapa .iframe{
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
-
-.item img:hover {
-  transform: scale(1.05);
-  }
 
 
   @media screen and (max-width: 720px) {
