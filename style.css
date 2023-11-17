@@ -203,8 +203,6 @@ img {
 }
 
 /*galeria fotos*/
-
-
 .galeria {
     --auto-grid-min-size: 16rem;  
     display: grid;
@@ -213,15 +211,20 @@ img {
     
     }    
   
-
-  
   .galeria_img {
     width: 280px;
     height: 350px;
     background-position: 100%;    
     object-fit: cover;
-          
+    transition: all 0.3s ease-in-out;  
+           
   }
+  
+  .galeria_img:hover {
+  transform: scale(1.05);
+  
+}
+
    
   .carrossel {
     width: 900px;
@@ -267,6 +270,18 @@ article > p {
     list-style: none; 
       
   }  
+
+  .auto-grid img {
+    transition: all 0.3s ease-in-out;  
+           
+  }
+  
+  .auto-grid img:hover {
+  transform: scale(1.05);
+  
+}
+
+
   
   .texto-salao {
     font-family: open sans;
@@ -301,17 +316,6 @@ article > p {
     text-align: center;
     font-family: Parisienne; 
   }
-  
-
-
-
-
-
-
-
-
-
-
 
 /*Botao*/
 .conteiner-botao {
@@ -405,38 +409,32 @@ article > p {
     
   }
   
+/*fotos-salao*/
+.container-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  }
 
-/*cards*/
+.item {
+  flex-grow: 1;
+  flex-basis: 300px;
+  height: 450px;
+  margin: 10px; 
+  object-fit: cover     
+}
 
-.cards {
-    display: flex;
-    padding: 32px;
-  }
-  .cards article.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgb(34, 125, 211);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
-    color: white;
-   
-  }
-  .cards article.card h3 {
-    font-size: 100%;
-    margin: 16px 0;
-  }
+.item img {
+  width: 100%;
+  height: auto1;
+  transition: all 0.3s ease-in-out;
+}
+
+.item img:hover {
+  transform: scale(1.05);
   
-  .cards article.card a {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-  }
-  
+}
+
+
   @media screen and (max-width: 720px) {
     .cards {
       flex-direction: column;
