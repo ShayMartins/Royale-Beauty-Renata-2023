@@ -203,7 +203,7 @@ img {
 }
 
 /*galeria fotos*/
-.galeria {
+.galeria-fotos {
     --auto-grid-min-size: 16rem;  
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -459,6 +459,10 @@ article > p {
     .cards article.card {
       margin-left: 0;
       margin-bottom: 32px;
+    }
+
+    .galery {
+      width: 100%;
     }
   }
 
