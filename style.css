@@ -540,12 +540,38 @@ article > p {
     }
     
   }
-  
-  
+   /*https://www.youtube.com/watch?v=00LpIJ58FZ4*/
+  .depoimento {
+    display: grid;
+
+    max-width: 100%;
+    height: auto;
+    padding: 0 4%;
+    margin: auto;
+    background-color: #daa520;
+    padding: 50px 0;
+  }
+
+  .row-depoimento{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
+.depoimento-col{
+  width: 25%;
+  padding: 0 15px;
 
+}
 
+.depoimento-col h4{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
 
 
 footer{
