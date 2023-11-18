@@ -484,6 +484,11 @@ article > p {
     .container-video {
       width: 100%;
     }
+
+    .container-depoimentos {
+      
+      width: 100%;
+    }
   }
 
  /* Estilos comuns para os cards */
@@ -541,37 +546,69 @@ article > p {
     
   }
    /*https://www.youtube.com/watch?v=00LpIJ58FZ4*/
-  .depoimento {
-    display: grid;
 
-    max-width: 100%;
-    height: auto;
-    padding: 0 4%;
-    margin: auto;
-    background-color: #daa520;
-    padding: 50px 0;
-  }
-
-  .row-depoimento{
+  .container-depoimentos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  
+.titulo-depoimento {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 5rem 0;
+  color: #a5a5a5;
+
+}
+.star {
+  width: 20px;   
+  }
+
+
+.cards-depoimentos {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3 - 50px);
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s ease;
+  
 }
 
-
-.depoimento-col{
-  width: 25%;
-  padding: 0 15px;
-
-}
-
-.depoimento-col h4{
-  font-size: 22px;
-  color: white;
+.cards-depoimentos .user {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin-bottom: 20px;
-  font-weight: 500;
-  position: relative;
-  text-transform: uppercase;
+    
 }
+
+.cards-depoimentos h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.cards-depoimentos p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cards-depoimentos:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
 
 
 footer{
