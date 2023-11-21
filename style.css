@@ -428,6 +428,13 @@ article > p {
  
 }
 
+
+.by {
+  color: #fff;
+}
+                        
+                                
+
 /*fotos-salao*/
 .container-fotos {
   display: flex;
