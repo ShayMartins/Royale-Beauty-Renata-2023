@@ -173,14 +173,15 @@ img {
 /* CARROSSEL*/
 .galery {
     width: 850px;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
-    align-items: center;
+    align-content: center;
     
 }
 
 .galery .fotos {
     width: 500%;
+    height: 600px;
     animation-name: animacao;
     animation-duration: 20s;
     animation-iteration-count: infinite;
