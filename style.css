@@ -268,21 +268,21 @@ article > p {
    
   .auto-grid  li {
     text-align: center;
-    font-size: 1.2rem;
-    background: var(--cor3);
+    font-size: 1.8rem;
+    background:#f1af09 ;
     color: #030303;
-    list-style: none; 
-    
-      
+    list-style: none;        
   }  
 
   .auto-grid img {
     transition: all 0.3s ease-in-out;  
-    height: 350px;       
+    height: 100%;  
+    width: 100%;   
   }
   
   .auto-grid img:hover {
   transform: scale(1.05);
+  
   
 }
 
@@ -321,6 +321,7 @@ article > p {
     text-align: center;
     font-family: Parisienne; 
   }
+
 
 /*Botao*/
 .conteiner-botao {
