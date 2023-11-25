@@ -471,9 +471,7 @@ article > p {
       width: 100%;
     }
 
-    .cards-depoimentos {
-      flex-direction: column;         
-    }
+    
 
    
   }
@@ -515,8 +513,7 @@ article > p {
     width: 100%;
     height: auto;
   }
-  
-  
+    
   .texto {
     font-size: 15px;
     padding: 3%;
@@ -530,27 +527,54 @@ article > p {
 
     .galery {
       width: 100%;
+      height: 50%;
     
     }
+    .item-depoimentos {
+      width: 100%;
+      flex-direction: column;
+    }
+
     
   }
    /*https://www.youtube.com/watch?v=00LpIJ58FZ4*/
 
-  .container-depoimentos {
+  .conteiner-depoimentos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     padding: 10px;
     text-align: center;
     gap: 30px;
+  
+  }
+
+  .item-depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    background: rgb(223, 224, 226);
+    padding: 2rem 1.5rem;
+    max-height: 468px;
+    margin-left: 32px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;    
+    transition: all 0.5s ease;
+    
+    
+    
   }
 
   
 .titulo-depoimento {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0 5rem 0;
-  color: #a5a5a5;
+  font-size: 30px;
+  margin: 16px 0;
+  text-align: center;
+  padding: 20px;
+  color: #757474;
 
 }
 .star {
@@ -558,21 +582,7 @@ article > p {
   }
 
 
-.cards-depoimentos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% / 3 - 30px);
-    margin: 0px;
-    padding: 30px;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    background-color: rgb(241, 237, 237);
-    transition: all 0.5s ease;
-  
-}
-
-.cards-depoimentos .user {
+.item-depoimentos .user {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -580,20 +590,26 @@ article > p {
     
 }
 
-.cards-depoimentos h3 {
+.item-depoimentos .img {
+  width: 100%;
+  height: auto;
+
+}
+
+.item-depoimentos h3 {
   margin-bottom: 20px;
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
 }
 
-.cards-depoimentos p {
+.item-depoimentos p {
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
 }
 
-.cards-depoimentos:hover {
+.item-depoimentos:hover {
   transform: scale(1.1);
   z-index: 1;
 }
